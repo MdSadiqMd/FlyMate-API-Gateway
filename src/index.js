@@ -36,6 +36,6 @@ app.use(
 
 app.use("/api", apiRoutes);
 
-app.listen(config.PORT, () => {
+app.listen(config.PORT, async () => {
   logger.info(`Successfully started the server on PORT : ${config.PORT}`);
 });
